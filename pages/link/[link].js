@@ -95,30 +95,29 @@ const Link = ({ link }) => {
 }
 
 
-export async function getServerSideProps({ params }) {
+export async function getStaticProps({ params }) {
 	const { link } = params; 
 	const result = await axiosClient.get(`/api/links/${link}`);  
 
 	return {
 		props: {
 			link: result.data
-		}
+		},
+		revalidate: 1
 	}
 
 }
 
-// export async function getStaticPaths(){
-// 	const links = await axiosClient.get('/api/links'); 
+export async function getStaticPaths(){
+	const links = await axiosClient.get('/api/links'); 
 
-// 	console.log("AQUI");
-
-// 	return{
-// 		paths: links.data.links.map(link => ({
-// 			params: { link: link.url}
-// 		})),
-// 		fallback: false
-// 	}
-// }
+	return{
+		paths: links.data.links.map(link => ({
+			params: { link: link.url}
+		})),
+		fallback:'blocking'
+	}
+}
 
 
 
