@@ -1,7 +1,7 @@
 # Backend Node-Send
 Application for upload and download files with:
 * Password validation.
-* Account system.
+* Auhtentication system.
 * Download counter.
 * Mobile support.
 
