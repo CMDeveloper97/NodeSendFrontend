@@ -9,7 +9,8 @@ import {
 	CREATE_LINK_ERROR,
 	CREATE_LINK_SUCCESS,
 	CLEAN_STATE,
-	ADD_PASSWORD
+	ADD_PASSWORD,
+	ADD_DOWNLOADS
 } from '../types'
 import { appContext } from './appContext';
 import { AppReducer } from './appReducer,';
