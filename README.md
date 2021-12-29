@@ -1,4 +1,4 @@
-# Backend Node-Send
+# Backend React-Send
 Application for upload and download files with:
 * Password validation.
 * Auhtentication system.
