@@ -1,7 +1,7 @@
 # Frontend ReactFile-Send
 Application for upload and download files with:
 * Password validation.
-* Auhtentication system.
+* Authentication system.
 * Download counter.
 * Mobile support.
 
