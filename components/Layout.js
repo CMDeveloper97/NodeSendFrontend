@@ -6,7 +6,7 @@ export const Layout = ({ children }) => {
 	return (
 		<>
 			<Head>
-				<title>ReactNodeSend</title>
+				<title>React File-Send</title>
 			</Head>
  
 			<div className="bg-gray-100 min-h-screen">

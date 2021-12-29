@@ -28,12 +28,12 @@ const Home = () => {
           url ? (
             <>
               <p className="text-center text-2xl mt-10">
-                <span className="font-bold text-red-700 text-4xl uppercase">Tu url es: </span>
+                <span className="font-bold text-blue-700 text-4xl uppercase">Tu url es: </span>
                 {`${process.env.frontendURL}/link/${url}`}
               </p>
               <button
                 type="button"
-                className="bg-red-500 hover:bg-gray-900 w-full p-2 mt-2 text-white uppercase font-bold cursor-pointer mt-10"
+                className="bg-blue-500 hover:bg-gray-900 w-full p-2 mt-2 text-white uppercase font-bold cursor-pointer mt-10"
                 onClick={()=>navigator.clipboard.writeText(`${process.env.frontendURL}/link/${url}`)}
 						  > Copiar enlace</button>
             </>
@@ -48,8 +48,8 @@ const Home = () => {
             <h2 className="text-4xl font-sans font-bold text-gray-800 my-4">
               Share files easy and private
             </h2>
-            <p className="text-red-500 leading-loose">
-              <span className="text-red-500 font-bold">ReactNodeSend </span>
+            <p className="text-blue-500 leading-loose">
+              <span className="text-blue-500 font-bold">React File-Send </span>
               it allow you to share files with end-to-end encryption,
               it allow you to share files with end-to-end encryption
               it allow you to share files with end-to-end encryption
@@ -59,8 +59,8 @@ const Home = () => {
             </p>
 
             <Link href="/createacount">
-              <a className="text-red-500 font-bold text-lg hover:text-red-700">
-                Crea una cuenta para mayores beneficios
+              <a className="text-blue-500 font-bold text-lg hover:text-blue-700"> 
+                Create an account for more benefits
               </a>
             </Link>
 

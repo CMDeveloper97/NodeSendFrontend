@@ -16,7 +16,7 @@ export const Input = ({formik, name, type, placeholder}) => {
 				onBlur={formik.handleBlur}
 			/>
 			{(formik.touched[name] && formik.errors[name]) && (
-				<div className="my-2 bg-gray-200 border-l-4 border-red-500 text-red-600 p-4">
+				<div className="my-2 bg-gray-200 border-l-4 border-blue-500 text-blue-600 p-4">
 					<p className="font-bold">Error</p>
 					<p>{formik.errors[name]}</p>
 				</div>

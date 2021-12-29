@@ -47,7 +47,7 @@ const Login = () => {
 						<Input formik={formik} name="password" type="password" placeholder="Password"/>
 						<input
 							type="submit"
-							className="bg-red-500 hover:bg-gray-900 w-full p-2 mt-2 text-white uppercase font-bold cursor-pointer"
+							className="bg-blue-500 hover:bg-gray-900 w-full p-2 mt-2 text-white uppercase font-bold cursor-pointer"
 							value="Login"
 						/>
 					</form>

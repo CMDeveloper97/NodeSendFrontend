@@ -56,11 +56,10 @@ export const AppState = ({children}) => {
 				}
 			})
 
-		} catch (error) {
-			console.log("ERROR");
+		} catch (error) { 
 			dispatch({
 				type: UPLOAD_FILE_ERROR,
-				payload: error.response.data.msg
+				payload: error.response ? error.response.data.msg : "An error has occurred"
 			})
 		}
 	}
