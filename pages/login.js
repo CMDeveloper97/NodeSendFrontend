@@ -13,7 +13,7 @@ const Login = () => {
 	const AuthContext = useContext(authContext);
 	const { logIn, message, authenticated } = AuthContext;
 
-	useEffect(() => {  
+	useEffect(() => {   
 		if(authenticated){ 
 			router.push('/');
 		}

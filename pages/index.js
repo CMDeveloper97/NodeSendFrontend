@@ -23,19 +23,19 @@ const Home = () => {
 
   return (
     <Layout>
-      <div className="md:w4/5 xl:w-3/5 mx-auto mn-32">
+      <div className="md:w4/5 xl:w-3/5 mx-auto mn-32 px-5">
         {
           url ? (
             <>
               <p className="text-center text-2xl mt-10">
-                <span className="font-bold text-blue-700 text-4xl uppercase">Tu url es: </span>
+                <span className="font-bold text-blue-700 text-4xl uppercase">Your url: </span>
                 {`${process.env.frontendURL}/link/${url}`}
               </p>
               <button
                 type="button"
                 className="bg-blue-500 hover:bg-gray-900 w-full p-2 mt-2 text-white uppercase font-bold cursor-pointer mt-10"
                 onClick={()=>navigator.clipboard.writeText(`${process.env.frontendURL}/link/${url}`)}
-						  > Copiar enlace</button>
+						  > Copy link</button>
             </>
           ): (
               <>

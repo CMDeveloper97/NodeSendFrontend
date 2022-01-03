@@ -23,11 +23,11 @@ export const Header = () => {
 			<img className="w-64 mb-8 md:mb-0 cursor-pointer" src="/logo.svg" onClick={redirectToHone} />
 			{(authenticated && user) ? (
 				<div className="flex items-center">
-					<p className="mr-2">Hola, {user.name}</p>
+					<p className="mr-2">Hello, {user.name}</p>
 					<button
 						onClick={logOut}
 						className="bg-black px-5 py-3 rounded-lg text-white font-bold uppercase"
-						type="button">Cerrar sesion</button>
+						type="button">Log Out</button>
 				</div>
 			) : (
 				<div>

@@ -43,12 +43,12 @@ export const Dropzone = () => {
 			{
 				acceptedFiles.length > 0 ? (
 					<div className="mt-10 w-full">
-						<h4 className="text-2xl font-bold text-center mb-4">Archivos</h4>
+						<h4 className="text-2xl font-bold text-center mb-4">File</h4>
 						<ul> {files} </ul>
 
 						{authenticated && <FormPassword/>}
 
-						{loading ? <p className="my-10 text-center text-gray-600">Subiendo archivoi...</p> : (
+						{loading ? <p className="my-10 text-center text-gray-600">Upload file...</p> : (
 								<button
 								type="button"
 								className="bg-blue-700 w-full py-3 rounded-lg text-white my-10 hover:bg-blue-800"
